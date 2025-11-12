@@ -1,0 +1,114 @@
+html, body {
+	height: 100%;
+	font-family: "Poppins", sans-serif;
+	background-image: url("../img/background.jpg");
+	background-size: cover;
+}
+div#background {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+body.my-login-page {
+	background-color: #f2f8be; /* tom suave de verde claro */
+	font-size: 14px;
+	color: #234d20; /* verde musgo escuro */
+}
+
+.my-login-page .card-wrapper {
+	width: 80%;
+	display: block;
+	margin: auto 25%;
+}
+
+.my-login-page .card {
+	border: none;
+	box-shadow: 0 4px 10px rgba(0, 50, 20, 0.1);
+	border-radius: 30px;
+	background-color: rgb(255, 255, 255, 0.7); /* verde translúcido */
+	backdrop-filter: blur(5px);
+}
+
+.my-login-page .card.fat {
+	padding: 10px;
+}
+
+.my-login-page .card .card-title {
+	color: #2a7c4f; /* verde médio */
+	margin-bottom: 30px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.my-login-page .form-control {
+	border: 2px solid #7bc47f; /* verde folha */
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+.my-login-page .form-control:focus {
+	border-color: #35b164; /* azul do planeta */
+	box-shadow: 0 0 5px rgba(59, 174, 160, 0.5);
+}
+
+.my-login-page .form-group label {
+	width: 100%;
+	color: #276749; /* verde floresta */
+}
+
+.my-login-page .btn.btn-block {
+	padding: 12px 10px;
+	background-color: #35b164; /* azul principal */
+	border: none;
+	border-radius: 10px;
+	color: white;
+	font-weight: 600;
+	transition: background-color 0.3s, transform 0.2s;
+}
+
+.my-login-page .btn.btn-block:hover {
+	background-color: #2f8e7e; /* azul mais escuro */
+	transform: scale(1.02);
+}
+
+.my-login-page a {
+	color: #2a7c4f;
+	text-decoration: none;
+}
+
+.my-login-page a:hover {
+	color: #1e5e3b;
+	text-decoration: underline;
+}
+
+.my-login-page .footer {
+	margin: 40px 0;
+	color: #ffffff;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 425px) {
+	.my-login-page .card-wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.my-login-page .card.fat {
+		padding: 0;
+	}
+
+	.my-login-page .card.fat .card-body {
+		padding: 15px;
+	}
+}
+
+h4 {
+	font-weight: bold;
+	font-size: 30px;
+}
